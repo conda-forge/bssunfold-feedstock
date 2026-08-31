@@ -1,5 +1,5 @@
 {% set name = "bssunfold" %}
-{% set version = "0.19.1" %}
+{% set version = "0.21.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/bssunfold-{{ version }}.tar.gz
-  sha256: 876bc86273d0b0f51f1fc2f4502989c7b1198743a967e626db094a4d74b04a52
+  sha256: e8562ee4ab455c4c6bfc18a39bd91d03e8ff8178e6a5ce5e0b329bcf31fac6bb
 
 build:
   entry_points:
