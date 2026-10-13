@@ -1,6 +1,5 @@
 {% set name = "bssunfold" %}
 {% set version = "0.29.1" %}
-{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -25,10 +24,10 @@ requirements:
     - hatchling >=1.26
   run:
     - python >={{ python_min }}
-    - numpy >=2.0
+    - numpy >=2.4.1
     - scipy >=1.16.3
-    - cvxpy >=1.1
-    - pandas >=2.3.3
+    - cvxpy >=1.7.5
+    - pandas >=2.2.3
     - matplotlib-base >=3.10.8
     - pyzmq >=27.1.0
 
