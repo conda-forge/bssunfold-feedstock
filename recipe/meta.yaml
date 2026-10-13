@@ -1,6 +1,5 @@
 {% set name = "bssunfold" %}
-{% set version = "0.29.0" %}
-{% set python_min = "3.11" %}
+{% set version = "0.29.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/bssunfold-{{ version }}.tar.gz
-  sha256: 874be32c5bc0ae1bf95740559cb3ec95a1841bf6054830e4f160f7a95af36c21
+  sha256: 7a728f0fcfe3f1e61d30f1671eabbb16613e1965e853b57157eb73ddc837f7c6
 
 build:
   entry_points:
@@ -25,10 +24,10 @@ requirements:
     - hatchling >=1.26
   run:
     - python >={{ python_min }}
-    - numpy >=2.0
+    - numpy >=2.4.1
     - scipy >=1.16.3
-    - cvxpy >=1.1
-    - pandas >=2.3.3
+    - cvxpy >=1.7.5
+    - pandas >=2.2.3
     - matplotlib-base >=3.10.8
     - pyzmq >=27.1.0
 
